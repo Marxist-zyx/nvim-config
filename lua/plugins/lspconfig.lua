@@ -24,6 +24,7 @@ return {
         ---------语言
         local servers = {
             "lua_ls",
+            "jsonls",
             -- "cssls",
             "html",
             "pyright",

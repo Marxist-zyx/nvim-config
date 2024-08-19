@@ -25,5 +25,6 @@ require("lazy").setup({
         { import = "plugins.lspconfig" }, --lsp配置
         { import = "plugins.trouble" }, --错误提示
         { import = "plugins.nonels" }, --代码格式化插件
+        { import = "plugins.vimtex" }, --代码格式化插件
     },
 })

@@ -51,6 +51,7 @@ return {
                 "pyright",
                 "vimls",
                 "fortls",
+                "jsonls",
             },
         })
     end,
