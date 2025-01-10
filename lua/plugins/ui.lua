@@ -15,6 +15,7 @@ return {
             require("transparent").clear_prefix("trouble")
             require("transparent").clear_prefix("indent")
             require("transparent").clear_prefix("bufferline")
+            require("transparent").clear_prefix("markview")
             -- Optional, you don't have to run setup.
             require("transparent").setup({
                 -- table: default groups
@@ -60,6 +61,7 @@ return {
                     "PmenuSbar",
                     "PmenuThumb",
                     "Diagnostics:",
+                    "markview"
                 },
                 -- table: groups you don't want to clear
                 exclude_groups = {},
