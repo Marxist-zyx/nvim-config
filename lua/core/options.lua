@@ -31,14 +31,3 @@ vim.opt.incsearch = true  -- search as characters are entered
 vim.opt.hlsearch = false  -- do not highlight matches
 vim.opt.ignorecase = true -- ignore case in searches by default
 vim.opt.smartcase = true  -- but make it case sensitive if an uppercase is entered
-
---禁用shada
-vim.opt.shadafile = "NONE"
-vim.api.nvim_create_autocmd("CmdlineEnter", {
-    once = true,
-    callback = function()
-        local shada = vim.fn.stdpath("state") .. "/shada/main.shada"
-        vim.o.shadafile = shada
-        vim.api.nvim_command("rshada! " .. shada)
-    end,
-})

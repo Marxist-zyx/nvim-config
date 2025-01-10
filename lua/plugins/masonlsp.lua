@@ -17,11 +17,11 @@ return {
 
         -- 定义一个包含多个包名的表（table）
         local packages_to_install = {
-            "prettier", -- html markdown格式化
-            "stylua", -- lua
-            "black", --python
+            "prettier",     -- html markdown格式化
+            "stylua",       -- lua
+            "black",        --python
             "clang-format", --C/C++
-            "fprettify", --fortran
+            "fprettify",    --fortran
         }
 
         -- 使用循环遍历包名列表并安装
@@ -38,19 +38,20 @@ return {
                 vim.notify(("[mason.nvim] %s unexist"):format(package))
             end
         end
+
         require("mason-lspconfig").setup({
             -- 选择需要启动的 lsp 服务器的语言
             ensure_installed = {
                 "bashls",
                 "clangd",
                 "html",
-                "jdtls",
+                -- "jdtls",
                 "texlab",
                 "lua_ls",
                 "marksman",
                 "pyright",
                 "vimls",
-                "fortls",
+                -- "fortls",
                 "jsonls",
             },
         })

@@ -26,5 +26,6 @@ require("lazy").setup({
         { import = "plugins.trouble" }, --错误提示
         { import = "plugins.nonels" }, --代码格式化插件
         { import = "plugins.vimtex" }, --代码格式化插件
+        { import = "plugins.markview" }, --代码格式化插件
     },
 })
