@@ -26,3 +26,6 @@ keymap.set("n", "k", [[v:count ? 'k' : 'gk']], { noremap = true, expr = true })
 --退出与保存
 keymap.set({"n", "v"},  "<leader>q", ":q<CR>", { noremap = true, silent = true })
 keymap.set({"n", "v"},  "<leader>w", ":w<CR>", { noremap = true, silent = true })
+
+----------------插入模式-----------
+keymap.set("i", "jk", "<Esc>")
